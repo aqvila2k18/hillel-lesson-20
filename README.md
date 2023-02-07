@@ -5,7 +5,7 @@
 Файл env.list содержит AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION
 
 Билд докер имеджа:
-docker build -t conduit-fe .
+docker build -t conduit-fe ./project-frontend
 
 Запуск контейнера:
 docker run -it --env-file /Users/aqvila/env.list conduit-fe aws s3 sync ./build/ s3://vdovenko-hillel-conduit-frontend
